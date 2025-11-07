@@ -1,0 +1,11 @@
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\bin\Debug\net9.0\lib.deps.json
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\bin\Debug\net9.0\lib.dll
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\bin\Debug\net9.0\lib.pdb
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\lib.AssemblyInfoInputs.cache
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\lib.AssemblyInfo.cs
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\lib.csproj.CoreCompileInputs.cache
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\lib.dll
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\refint\lib.dll
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\lib.pdb
+C:\Users\TheLa\Documents\CODE\Projects\2DLayoutWithGrid\lib\obj\Debug\net9.0\ref\lib.dll
