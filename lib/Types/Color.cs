@@ -1,8 +1,8 @@
 namespace Tessera.Types;
 
-struct Color{
-	float r;
-	float g;
-	float b;
-	float a;
+public struct Color{
+	public byte r;
+	public byte g;
+	public byte b;
+	public byte a;
 }

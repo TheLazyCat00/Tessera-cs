@@ -1,7 +1,6 @@
 namespace Tessera.Types;
 
-
-struct Index2{
-	int X;
-	int Y;
+public struct Index2{
+	public int X;
+	public int Y;
 }
