@@ -7,10 +7,10 @@ public class RgbaSurface : Interfaces.PixelSurface {
 	public int Height { get; }
 	public ReadOnlyMemory<byte> Pixels => _pixels;
 
-	public RgbaSurface(int width, int height, Types.Color color) {
-		Width = width;
-		Height = height;
-		_pixels = new byte[width * height * 4];
+	public RgbaSurface(Types.Dimensions dimensions, Types.Color color) {
+		Width = dimensions.Width;
+		Height = dimensions.Height;
+		_pixels = new byte[Width * Height * 4];
 
 		for (int i = 0; i < _pixels.Length; i += 4) {
 			_pixels[i + 0] = color.r;
