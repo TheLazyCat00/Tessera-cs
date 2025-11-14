@@ -1,8 +1,8 @@
 namespace Tessera.Types;
 
-public struct Offset{
-	float Top;
-	float Down;
-	float Left;
-	float Right;
+public struct Offset<T>{
+	T Top;
+	T Down;
+	T Left;
+	T Right;
 }

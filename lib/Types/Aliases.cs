@@ -1,17 +1,17 @@
 namespace Tessera.Types;
 
-public struct CellPosition{
-	public Index2 Value;
-	public int X => Value.X;
-	public int Y => Value.Y;
+public struct Pixel{
+	public int Value;
+	public Pixel(int value) => Value = value;
 
-	public CellPosition(Index2 value) { Value = value; }
+	public static implicit operator int(Pixel p) => p.Value;
+	public static implicit operator Pixel(int v) => new Pixel(v);
 }
 
-public struct PixelPosition{
-	public Index2 Value;
-	public int X => Value.X;
-	public int Y => Value.Y;
+public struct Cell{
+	public int Value;
+	public Cell(int value) => Value = value;
 
-	public PixelPosition(Index2 value) { Value = value; }
+	public static implicit operator int(Cell p) => p.Value;
+	public static implicit operator Cell(int v) => new Cell(v);
 }

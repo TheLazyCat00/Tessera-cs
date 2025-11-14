@@ -16,7 +16,7 @@ public class Grid {
 		this.RenderFunc = Render;
 	}
 
-	public Interfaces.PixelSurface Render(Types.Dimensions dimensions) {
+	public Interfaces.PixelSurface Render(Types.Dimension2<Types.Pixel> dimensions) {
 		var canvas = new Surfaces.RgbaSurface(dimensions, new Types.Color(0, 0, 0, 255));
 		foreach (var widget in widgets){
 			RenderWidget(widget, dimensions, canvas);
@@ -24,7 +24,7 @@ public class Grid {
 		return null;
 	}
 
-	public void RenderWidget(Types.Widget widget, Types.Dimensions dimensions, Surfaces.RgbaSurface canvas){
+	public void RenderWidget(Types.Widget widget, Types.Dimension2<Types.Pixel> dimensions, Surfaces.RgbaSurface canvas){
 		dimensions.Width/columnsWidth.Sum()
 	}
 

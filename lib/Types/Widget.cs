@@ -1,8 +1,8 @@
 namespace Tessera.Types;
 
-public struct Widget{
-	public CellPosition TopLeft;
-	public CellPosition BottomRight;
-	public List<Viewport> Viewports;
-	public int CurrentViewport;
-}
+public record Widget(
+	Vector2<Cell> TopLeft,
+	Vector2<Cell> BottomRight,
+	List<Viewport> Viewports,
+	int CurrentViewport
+);

@@ -7,7 +7,7 @@ public class RgbaSurface : Interfaces.PixelSurface {
 	public int Height { get; }
 	public ReadOnlyMemory<byte> Pixels => _pixels;
 
-	public RgbaSurface(Types.Dimensions dimensions, Types.Color color) {
+	public RgbaSurface(Types.Dimension2<Types.Pixel> dimensions, Types.Color color) {
 		Width = dimensions.Width;
 		Height = dimensions.Height;
 		_pixels = new byte[Width * Height * 4];
@@ -33,7 +33,7 @@ public class RgbaSurface : Interfaces.PixelSurface {
 		return (_pixels[i], _pixels[i + 1], _pixels[i + 2], _pixels[i + 3]);
 	}
 
-	public void Blit(Types.Index2 topLeft, Types.Index2 bottomRight, byte[] src) {
+	public void Blit(Types.Vector2<Types.Pixel> topLeft, Types.Vector2<Types.Pixel> bottomRight, byte[] src) {
 		int rectWidth = bottomRight.X - topLeft.X;
 		int rectHeight = bottomRight.Y - topLeft.Y;
 		int rowSize = rectWidth * 4;

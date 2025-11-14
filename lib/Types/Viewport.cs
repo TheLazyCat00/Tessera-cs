@@ -1,6 +1,6 @@
 namespace Tessera.Types;
 
-public struct Viewport{
-	RenderCallback RenderFunc;
-	Offset Margin;
-}
+public record Viewport(
+	RenderCallback RenderFunc,
+	Offset<Pixel> Margin
+);
