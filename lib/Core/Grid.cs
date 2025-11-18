@@ -2,12 +2,12 @@ namespace Tessera.Core;
 
 public class Grid {
 	List<Types.Widget> widgets;
-	List<int> columnsWidth;
-	List<int> rowsHeight;
+	List<Types.FlexWeight> columnsWidth;
+	List<Types.FlexWeight> rowsHeight;
 	Types.Color bgColor;
 	Types.RenderCallback RenderFunc;
 
-	public Grid(List<int> columnsWidth, List<int> rowsHeight, Types.Color bgColor){
+	public Grid(List<Types.FlexWeight> columnsWidth, List<Types.FlexWeight> rowsHeight, Types.Color bgColor){
 		widgets = new List<Types.Widget>();
 
 		this.columnsWidth = columnsWidth;
@@ -37,6 +37,7 @@ public class Grid {
 	}
 
 	Types.Vector2<Types.Pixel> getBottomRightPos(RenderContext renderContext){
+		int hi = renderContext.widget.BottomRight.X;
 		Types.Cell cellsAfterX = columnsWidth.GetRange(0, renderContext.widget.BottomRight.X).Sum();
 		Types.Cell cellsAfterY = rowsHeight.GetRange(0, renderContext.widget.BottomRight.Y).Sum();
 
